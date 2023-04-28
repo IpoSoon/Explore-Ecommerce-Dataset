@@ -1,4 +1,5 @@
-# [SQL]Explore Ecommerce Dataset
+# [SQL] Explore Ecommerce Dataset
+
 # I. Introduction
 # II. Motivation
 # III. Dataset
