@@ -69,5 +69,70 @@ In this project, we will write 08 query in Bigquery base on Google Analytics dat
 
 ![image](https://user-images.githubusercontent.com/101726623/235144083-3499b416-0388-46ea-850f-30006e1b4ede.png)
 
+### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
+* SQL code
+
+![image](https://user-images.githubusercontent.com/101726623/235146761-aeb66e07-8f91-4c6f-a4c2-c3fb8d64708a.png)
+
+* Query results
+
+![image](https://user-images.githubusercontent.com/101726623/235146847-e367b16c-38f0-484e-8c89-85dfa1b69499.png)
+
+### 
+```
+with get_1month_cohort as (SELECT  
+  CASE WHEN 1 = 1 THEN "201701" END AS month,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_product_view,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_addtocart,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_purchase,
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201701*` ,
+UNNEST(hits) as hits,
+UNNEST(hits.product) as product),
+
+get_2month_cohort as (SELECT  
+  CASE WHEN 1 = 1 THEN "201702" END AS month,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_product_view,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_addtocart,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_purchase,
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201702*` ,
+UNNEST(hits) as hits,
+UNNEST(hits.product) as product),
+
+get_3month_cohort as (SELECT  
+  CASE WHEN 1 = 1 THEN "201703" END AS month,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_product_view,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_addtocart,
+  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
+num_purchase,
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201703*` ,
+UNNEST(hits) as hits,
+UNNEST(hits.product) as product)
+
+select 
+month,
+num_product_view,
+num_addtocart,
+num_purchase,
+ROUND(num_addtocart/num_product_view*100,2) as add_to_cart_rate,
+ROUND(num_purchase/num_product_view*100,2) as purchase_rate
+from 
+(SELECT * FROM get_1month_cohort
+UNION ALL 
+SELECT * FROM get_2month_cohort
+UNION ALL
+SELECT * FROM get_3month_cohort)
+ORDER BY month;
+```
+
+
+
 
 ## V. Conclusion
