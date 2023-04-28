@@ -50,17 +50,20 @@ In this project, we will write 08 query in Bigquery base on Google Analytics dat
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
 
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235143576-0a816953-e12d-4d47-ab8b-0a851e82a65c.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235143708-06c7b447-5c1e-44bb-89ae-c5fed537bd92.png)
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
-
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235144017-2e40f75c-4374-4d2b-94cb-a36c591a80c2.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235144083-3499b416-0388-46ea-850f-30006e1b4ede.png)
 
 
