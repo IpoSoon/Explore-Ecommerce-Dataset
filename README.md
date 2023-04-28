@@ -10,9 +10,8 @@ This project contains an eCommerce dataset that we will explore using SQL on [Go
 ### The eCommerce dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
 * Log in to your Google Cloud Platform account and create a new project.
 * Navigate to the BigQuery console and select your newly created project.
-* In the navigation panel, select "Add Data" and then "Pin a project".
-* Enter the project ID "bigquery-public-data" and click "Pin".
-* In the navigation panel, expand the "bigquery-public-data" project and select the "google_analytics_sample" dataset.
+* In the navigation panel, select "Add Data" and then "Search a project".
+* Enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions" and click "Enter".
 * Click on the "ga_sessions_*" table to open it.
 ## IV. Exploring the Dataset
 ## V. Conclusion
