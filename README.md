@@ -16,39 +16,42 @@ The eCommerce dataset is stored in a public Google BigQuery dataset. To access t
 ## IV. Exploring the Dataset
 In this project, we will write 08 query in Bigquery base on Google Analytics dataset
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
-
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235141283-3f640e8c-237f-4100-b734-f0383a999560.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235141359-1648197b-6339-42ca-b2a2-3dce9f39283b.png)
 
 ### Query 02: Bounce rate per traffic source in July 2017
-
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235142111-5df9bb05-f29c-49e5-a1d8-3f7187667874.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235142182-87c47ea0-4cae-41b8-8204-f17d774914d3.png)
 
 ### Query 3: Revenue by traffic source by week, by month in June 2017
-
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235142542-556901cf-2087-4c72-94d4-0372546ad77d.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235142590-e0fec692-794c-4247-a659-433ce605c158.png)
 
 ### Query 04: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
-
 * SQL code
+
 ![image](https://user-images.githubusercontent.com/101726623/235143185-85e4ffbe-1030-4f70-99c6-1571facdf3d8.png)
 
 * Query results
+
 ![image](https://user-images.githubusercontent.com/101726623/235143315-8d87f354-351b-4218-ac77-bf8c0f9e716b.png)
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
-
 * SQL code
 
 ![image](https://user-images.githubusercontent.com/101726623/235143576-0a816953-e12d-4d47-ab8b-0a851e82a65c.png)
