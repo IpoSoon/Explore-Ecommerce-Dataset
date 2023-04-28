@@ -12,6 +12,6 @@ This project contains an eCommerce dataset that we will explore using SQL on [Go
 * Navigate to the BigQuery console and select your newly created project.
 * In the navigation panel, select "Add Data" and then "Search a project".
 * Enter the project ID **"bigquery-public-data.google_analytics_sample.ga_sessions"** and click "Enter".
-* Click on the **"ga_sessions_*"** table to open it.
+* Click on the **"ga_sessions_"** table to open it.
 ## IV. Exploring the Dataset
 ## V. Conclusion
