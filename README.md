@@ -7,7 +7,7 @@ This project contains an eCommerce dataset that we will explore using SQL on [Go
 * [Google BigQuery API](https://cloud.google.com/bigquery/docs/enable-transfer-service#:~:text=Enable%20the%20BigQuery%20Data%20Transfer%20Service,-Before%20you%20can&text=Open%20the%20BigQuery%20Data%20Transfer,Click%20the%20ENABLE%20button.) enabled
 * [SQL query editor](https://cloud.google.com/monitoring/mql/query-editor) or IDE
 ## III. Dataset Access
-###The eCommerce dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
+### The eCommerce dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
 * Log in to your Google Cloud Platform account and create a new project.
 * Navigate to the BigQuery console and select your newly created project.
 * In the navigation panel, select "Add Data" and then "Pin a project".
