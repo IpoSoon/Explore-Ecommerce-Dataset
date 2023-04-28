@@ -78,7 +78,9 @@ In this project, we will write 08 query in Bigquery base on Google Analytics dat
 
 ![image](https://user-images.githubusercontent.com/101726623/235146847-e367b16c-38f0-484e-8c89-85dfa1b69499.png)
 
-### 
+### Query 08: Calculate cohort map from pageview to addtocart to purchase in last 3 month.
+* SQL code
+
 ```
 with get_1month_cohort as (SELECT  
   CASE WHEN 1 = 1 THEN "201701" END AS month,
@@ -131,6 +133,10 @@ UNION ALL
 SELECT * FROM get_3month_cohort)
 ORDER BY month;
 ```
+* Query results
+
+![image](https://user-images.githubusercontent.com/101726623/235148311-a2d83174-9bf3-43e3-aed1-47030af40b3b.png)
+
 
 
 
