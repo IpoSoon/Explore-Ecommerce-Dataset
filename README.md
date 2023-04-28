@@ -39,5 +39,29 @@ In this project, we will write 08 query in Bigquery base on Google Analytics dat
 * Query results
 ![image](https://user-images.githubusercontent.com/101726623/235142590-e0fec692-794c-4247-a659-433ce605c158.png)
 
+### Query 04: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
+
+* SQL code
+![image](https://user-images.githubusercontent.com/101726623/235143185-85e4ffbe-1030-4f70-99c6-1571facdf3d8.png)
+
+* Query results
+![image](https://user-images.githubusercontent.com/101726623/235143315-8d87f354-351b-4218-ac77-bf8c0f9e716b.png)
+
+### Query 05: Average number of transactions per user that made a purchase in July 2017
+
+* SQL code
+![image](https://user-images.githubusercontent.com/101726623/235143576-0a816953-e12d-4d47-ab8b-0a851e82a65c.png)
+
+* Query results
+![image](https://user-images.githubusercontent.com/101726623/235143708-06c7b447-5c1e-44bb-89ae-c5fed537bd92.png)
+
+### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
+
+* SQL code
+![image](https://user-images.githubusercontent.com/101726623/235144017-2e40f75c-4374-4d2b-94cb-a36c591a80c2.png)
+
+* Query results
+![image](https://user-images.githubusercontent.com/101726623/235144083-3499b416-0388-46ea-850f-30006e1b4ede.png)
+
 
 ## V. Conclusion
