@@ -139,7 +139,7 @@ ORDER BY month;
 
 ## V. Conclusion
 * In conclusion, my exploration of the eCommerce dataset using SQL on Google BigQuery based on the Google Analytics dataset has revealed several interesting insights.
-* By exploring eCommerce data, I have gained valuable information about total visits, pageview, transactions, bounce rate, and revenue per traffic source,.... which could inform future business decisions.
+* By exploring eCommerce dataset, I have gained valuable information about total visits, pageview, transactions, bounce rate, and revenue per traffic source,.... which could inform future business decisions.
 * To deep dive into the insights and key trends, the next step will visualize the data with some software like Power BI,Tableau,...
 * **Overall**, this project has demonstrated the power of using SQL and big data tools like Google BigQuery to gain insights into large datasets.
 
